@@ -6,9 +6,6 @@ import { IoSearch } from "react-icons/io5";
 import { navigation } from '../constants/navigation';
 
 
-
-
-
 const Header = () => {
 
     const [searchInput, setSearchInput] = useState('');
@@ -16,7 +13,9 @@ const Header = () => {
 
 
     useEffect(() => {
+      if(searchInput){
       navigate(`/search?q=${searchInput}`)
+      }
     }, [searchInput]);
 
 
@@ -25,7 +24,7 @@ const Header = () => {
     }
 
   return (
-    <div className='fixed top-0 w-full h-16 bg-neutral-600 bg-opacity-75'>
+    <div className='fixed top-0 w-full h-16 bg-neutral-600 bg-opacity-75 z-10'>
       <div className='container mx-auto px-4 flex items-center h-full'>
          <Link to="/">
             <img src={logo} alt='logo' width={120}/>
@@ -35,8 +34,8 @@ const Header = () => {
             {
                 navigation.map((nav, index) => {
                     return (
-                         <div>
-                            <NavLink key={index} to={nav.href} className={ ({isActive}) => `px-2 hover:text-neutral-100 ${isActive} && "text-neutral-100"}`}>
+                         <div key={index}>
+                            <NavLink  to={nav.href} className={ ({isActive}) => `px-2 hover:text-neutral-100 ${isActive} && "text-neutral-100"}`}>
                                {nav.lable}
                             </NavLink>
                          </div>
