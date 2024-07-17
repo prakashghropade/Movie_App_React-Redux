@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -12,7 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-neutral-900 text-neutral-300
+  scroll-behavior: smooth;
+  @apply bg-neutral-900 text-neutral-300 p-0 m-0
 }
 
 code {
