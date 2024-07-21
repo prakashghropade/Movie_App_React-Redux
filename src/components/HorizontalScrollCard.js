@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import { FaAnglesRight } from "react-icons/fa6";
 import { FaAnglesLeft } from "react-icons/fa6";
 
-const HorizontalScrollCard = ({data=[], heading, trending}) => {
+const HorizontalScrollCard = ({data=[], heading, trending, media_type}) => {
     
     const containerRef = useRef();
 
@@ -18,8 +18,8 @@ const HorizontalScrollCard = ({data=[], heading, trending}) => {
 
 
   return (
-    <div className='container mx-auto px-3 my-10'>
-    <h2 className='text-xl lg:text-2xl font-bold mb-2 text-white'>{heading}</h2>
+    <div className='container mx-auto px-3 my-10 z-10'>
+    <h2 className='text-xl lg:text-2xl font-bold mb-2 text-white capitalize'>{heading}</h2>
    
     <div className=' relative'>
 
@@ -27,7 +27,7 @@ const HorizontalScrollCard = ({data=[], heading, trending}) => {
       {
         data.map((data, index) => {
           return (
-            <Card key={data.id+"heading"+index} data={data} index={index+1} trending={trending}/>
+            <Card key={data.id+"heading"+index} data={data} index={index+1} trending={trending} media_type={media_type}/>
           )
         })
       }

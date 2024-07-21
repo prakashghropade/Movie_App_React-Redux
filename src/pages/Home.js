@@ -21,14 +21,14 @@ const Home = () => {
 
       <HorizontalScrollCard data={trendingData} heading={"Trending"} trending={true}/>
 
-      <HorizontalScrollCard data={nowPlayingData} heading={"Now Playing"}/>
+      <HorizontalScrollCard data={nowPlayingData} heading={"Now Playing"} media_type={"movie"}/>
 
-      <HorizontalScrollCard data={topRatedData} heading={"Top Rated"}/>
+      <HorizontalScrollCard data={topRatedData} heading={"Top Rated"} media_type={"movie"}/>
 
 
-      <HorizontalScrollCard data={popularTvShowData} heading={"Popular Tv Show"}/>
+      <HorizontalScrollCard data={popularTvShowData} heading={"Popular Tv Show"} media_type={"tv"}/>
 
-      <HorizontalScrollCard data={onAirShowData} heading={"On The Air"}/>
+      <HorizontalScrollCard data={onAirShowData} heading={"On The Air"} media_type={"tv"}/>
 
   
     </div>
