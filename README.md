@@ -25,7 +25,7 @@ The `Movie App` is a web application that utilizes the `TMDB` (The Movie Databas
 
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/Home_movie.png" height="300px" width="100%"/>
 <p align="center">
-<p> <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/details_movie.png" height="300px" width="45%"/> <em>Home Page</em> </p> &nbsp; &nbsp; &nbsp; &nbsp;   
+<p> <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/details_movie.png" height="300px" width="45%"/> &nbsp; &nbsp; &nbsp; &nbsp; <em>Home Page</em> </p> 
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/SearchPage.png" height="300px" width="45%"/> &nbsp; &nbsp; &nbsp; &nbsp;   
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/video_page.png" height="300px" width="45%"/> &nbsp; &nbsp; &nbsp; &nbsp; 
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/responsive.png" height="300px" width="45%"/> &nbsp; &nbsp; &nbsp; &nbsp;   
