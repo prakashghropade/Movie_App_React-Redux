@@ -14,32 +14,22 @@ const DetailsPage = () => {
   const imageURL = useSelector(state => state.movieoData.imageURL);
 
   const { data } = useFetchDetails(`/${params?.explore}/${params?.id}`);
+  
+  const { data : videoData } = useFetchDetails(`/${params?.explore}/${data?.id}/videos`)
+
   const { data: castdata } = useFetchDetails(`/${params?.explore}/${params?.id}/credits`);
 
   const {data: similarData} = useFetch(`/${params?.explore}/${params?.id}/similar`);
 
   const {data: recomedationData} = useFetch(`/${params?.explore}/${params?.id}/recommendations`);
-
-  const { data : videoData } = useFetchDetails(`/${params?.explore}/${data?.id}/videos`)
-
+ 
   const videos =  videoData?.results;
-
-  console.log("Videos is a array or not", videos);
-
-
-  
-
-
-  console.log("castdatadata", castdata);
-  console.log("movies data", data);
 
   const duration = (Number(data?.runtime) / 60).toFixed(1).split(".");
   // const  writer = castdata?.crew?.filter(el => el?.job === "writer")?.map(el=> el?.name)?.join(", ");
   const [playVideo,setPlayVideo] = useState(false)
-  const [playVideoId,setPlayVideoId] = useState("")
 
-    const handlePlayVideo = (data)=>{
-    setPlayVideoId(data)
+    const handlePlayVideo = ()=>{
     setPlayVideo(true)
     for(let i=0; i<3000000000; i++){
 
@@ -60,11 +50,13 @@ const DetailsPage = () => {
           <img
             src={imageURL + data?.backdrop_path}
             className='h-full object-cover w-full'
+            alt='back_img'
           />
 
           <div className='absolute w-full h-full top-0 bg-gradient-to-t from-neutral-900/90 to-transparent'>
           </div>
 
+        </div>
         </div>
 
         <div>
@@ -75,9 +67,10 @@ const DetailsPage = () => {
               <img
                 src={imageURL + data?.poster_path}
                 className='h-80 w-60 object-cover rounded'
+                alt='poster_img'
               />
 
-              <button onClick={()=>handlePlayVideo(data)} className='mt-5 w-full py-2 text-center bg-white rounded text-lg hover:bg-gradient-to-l from-red-500 hover:scale-105 transition-all text-black'>Play Now</button>
+              <button onClick={()=>handlePlayVideo()} className='mt-5 w-full py-2 text-center bg-white rounded text-lg hover:bg-gradient-to-l from-red-500 hover:scale-105 transition-all text-black'>Play Now</button>
             </div>
 
             <div>
@@ -138,6 +131,8 @@ const DetailsPage = () => {
                           <img
                             src={imageURL + starCast?.profile_path}
                             className='w-24 h-24 object-cover rounded-full'
+                            alt='cast_img'
+                            
                           />
                         </div>
                         <p className='text-bold text-center text-sm text-neutral-400'>{starCast?.name}</p>
@@ -151,18 +146,18 @@ const DetailsPage = () => {
 
           </div>
           
+        </div>
+          
           <div>
                 <HorizontalScrollCard data={similarData} heading={`Similar ${params?.explore}`} media_type={`${params?.explore}`}/>
 
                 <HorizontalScrollCard data={recomedationData} heading={`Recomendation ${params?.explore}`} media_type={`${params?.explore}`}/>
           </div>
 
-        </div>
-      </div>
 
       {
             playVideo && (
-              <VideoPlay data={playVideoId} close={()=>setPlayVideo(false)} media_type={params?.explore}/>
+              <VideoPlay  close={()=>setPlayVideo(false)}  videokey={videos}/>
             )
           }
 

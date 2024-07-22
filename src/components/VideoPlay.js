@@ -1,7 +1,9 @@
 import React from 'react'
 import { IoClose } from "react-icons/io5";
 
-const VideoPlay = ({data, close, media_type}) => {
+const VideoPlay = ({ close, videokey}) => {
+
+  const key = videokey[0]?.key;
 
   return (
     <section className='fixed bg-neutral-700 top-0 right-0 bottom-0 left-0 z-40 bg-opacity-50 flex justify-center items-center'> 
@@ -11,11 +13,11 @@ const VideoPlay = ({data, close, media_type}) => {
               <IoClose/>
           </button>
 
-          {/* <iframe
-            src={`https://www.youtube.com/embed/${?.results[0]?.key}`}
+         <iframe
+            src={`https://www.youtube.com/embed/${key}`}
             className='w-full h-full'
-          /> */}
-
+            title='Video'
+          />  
 
 
         </div>
