@@ -23,5 +23,5 @@ The `Movie App` is a web application that utilizes the `TMDB` (The Movie Databas
 **Popular:** Shows trending and popular movies and TV shows.  </br>
 **Actor Information:** Provides information about actors, including biographies, filmography, and photos. </br>
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://drive.google.com/drive/folders/1-wC9dQM1B1VK0mqPJwa1uICt6I3350k3)
 
