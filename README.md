@@ -12,7 +12,7 @@ Not applicable for this project (since we're using TMDB API directly)
 TMDB API (https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Features
-Search: Users can search for movies, TV shows, or actors by entering keywords. </br>
+**Search**: Users can search for movies, TV shows, or actors by entering keywords. </br>
 Details: Detailed information about each movie or TV show, including plot summaries, ratings, genres, and release dates.  </br>
 Trailers: Links to trailers and clips related to each movie or TV show. </br>
 Favorites: Ability for users to mark movies or TV shows as favorites for quick access.  </br>
