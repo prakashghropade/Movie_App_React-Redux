@@ -24,7 +24,7 @@ The `Movie App` is a web application that utilizes the `TMDB` (The Movie Databas
 **Actor Information:** Provides information about actors, including biographies, filmography, and photos. </br>
 
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/Home_movie.png" height="300px" width="100%"/>
-<div display="flex" flex-direction="col">
+<div display="flex" flex-direction="cols">
  <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/details_movie.png" height="300px" width="50%"/>
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/SearchPage.png" height="300px" width="50%"/>
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/video_page.png" height="300px" width="50%"/>
