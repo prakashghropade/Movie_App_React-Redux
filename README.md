@@ -23,6 +23,7 @@ The `Movie App` is a web application that utilizes the `TMDB` (The Movie Databas
 **Popular:** Shows trending and popular movies and TV shows.  </br>
 **Actor Information:** Provides information about actors, including biographies, filmography, and photos. </br>
 
+## Screens
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/Home_movie.png" height="300px" width="100%"/>
 <p align="center">
 <img src="https://github.com/prakashghropade/Movie_App_React-Redux/blob/main/details_movie.png" height="300px" width="45%"/> &nbsp; &nbsp; &nbsp; &nbsp; 
