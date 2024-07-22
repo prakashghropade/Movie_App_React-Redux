@@ -3,10 +3,12 @@ The Movie App is a web application that utilizes the TMDB (The Movie Database) A
 
 ## Technologies Used
 ### Frontend: 
-HTML, CSS, JavaScript (React, Vue.js, Angular, etc.)
+HTML, CSS, JavaScript (React.js)
 ### Backend: 
 Node.js, Express (optional, if you have a server-side component)
 ### Database: 
 Not applicable for this project (since we're using TMDB API directly)
 ### API: 
 TMDB API (https://developers.themoviedb.org/3/getting-started/introduction)
+
+
