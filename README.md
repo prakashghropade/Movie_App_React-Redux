@@ -8,11 +8,11 @@ The `Movie App` is a web application that utilizes the `TMDB` (The Movie Databas
 ### Frontend: 
  - HTML, CSS, JavaScript (React.js)
 ### Backend: 
-Node.js, Express (optional, if you have a server-side component)
+ - Node.js, Express (optional, if you have a server-side component)
 ### Database: 
-Not applicable for this project (since we're using TMDB API directly)
+ - Not applicable for this project (since we're using TMDB API directly)
 ### API: 
-TMDB API (https://developers.themoviedb.org/3/getting-started/introduction)
+ -  TMDB API (https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Features
 **Search:** Users can search for movies, TV shows, or actors by entering keywords. </br>
@@ -22,4 +22,6 @@ TMDB API (https://developers.themoviedb.org/3/getting-started/introduction)
 **Upcoming:** Displays upcoming movies and release dates. </br>
 **Popular:** Shows trending and popular movies and TV shows.  </br>
 **Actor Information:** Provides information about actors, including biographies, filmography, and photos. </br>
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 
